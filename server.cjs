@@ -64,7 +64,7 @@ app.post("/api/inquiry", (req, res) => {
   `);
   return res.json({
     success: true,
-    message: "Thank you for contacting Vanguard Global Trade. Your B2B Sourcing inquiry has been logged successfully and routed to our international trading desk. A dedicated Sourcing Manager will contact you with detailed specs and a quotation within 2-4 business hours."
+    message: "Thank you for contacting IndoEx Global. Your B2B Sourcing inquiry has been logged successfully and routed to our international trading desk. A dedicated Sourcing Manager will contact you with detailed specs and a quotation within 2-4 business hours."
   });
 });
 app.post("/api/query", async (req, res) => {
@@ -76,24 +76,23 @@ app.post("/api/query", async (req, res) => {
     if (!process.env.GEMINI_API_KEY) {
       return res.json({
         success: true,
-        text: "Hello! I am Vanguard's B2B Sourcing AI Copilot. It looks like the Gemini API Key is not configured yet in the Secrets panel. Once configured, I will be fully active to analyze your bulk specifications, suggest matching HS codes, estimate container cargo metrics, and outline international customs and compliance documentations for your shipments!"
+        text: "Hello! I am IndoEx Global's B2B Sourcing AI Copilot. It looks like the Gemini API Key is not configured yet in the Secrets panel. Once configured, I will be fully active to analyze your bulk specifications, suggest matching HS codes, estimate container cargo metrics, and outline international customs and compliance documentations for your shipments!"
       });
     }
     const ai = getAi();
     const systemInstruction = `
-You are Vanguard's Elite AI Trade & Sourcing Copilot (B2B Sourcing Agent).
+You are IndoEx Global's Elite AI Trade & Sourcing Copilot (B2B Sourcing Agent).
 Your role is to help international business buyers find high-quality products, estimate shipping cargo details, understand HS Codes, customs documentation, import-export regulatory standards, and draft request specs.
 Be highly professional, corporate, and helpful. Use clear B2B trade terminology (FOB, CIF, EXW, Bill of Lading, SGS Inspections, Customs Clearance).
 Provide detailed, comprehensive answers with well-formatted markdown lists, small tables, or bold key terms.
 
-Highlight Vanguard Global Trade's expertise in:
-- Agricultural Commodities (non-GMO grains, premium coffee beans, organic sugar, bulk spices)
-- Industrial Raw Materials & Metals (steel coils, aluminum profiles, structural materials)
-- Textiles & Apparel (bulk organic cotton fabrics, raw yarn, finished corporate apparel)
-- Electronics & Hardware (industrial sensors, micro-components, display assemblies)
-- Heavy Equipment & Machinery (automotive assemblies, packing machines, heavy industrial spare parts)
+    Highlight IndoEx Global's expertise in:
+    - Spices (Premium Bold Black Pepper, High-Curcumin Alleppey Turmeric, Extra Bold Green Cardamom)
+    - Dehydrated Powder (Premium Onion Powder, Dehydrated Garlic Powder, Fine Ginger Powder)
+    - Cereals (Aged Long-Grain Basmati Rice, Non-GMO Milling Wheat, Premium Yellow Maize/Corn)
+    - Construction Material (Double Charged Glazed Vitrified Tiles, Polished Natural Granite Slabs, Hot-Dipped Galvanized Steel Coils)
 
-Vanguard provides end-to-end global trade management, including:
+IndoEx Global provides end-to-end global trade management, including:
 - Professional supplier audit and factory verification
 - On-site SGS/Bureau Veritas inspections and strict QC
 - Customs clearance brokerage in major hubs (USA, Rotterdam, Singapore, Shanghai, Dubai, Mumbai)
