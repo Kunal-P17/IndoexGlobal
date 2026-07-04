@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Globe, ArrowUpRight, Check, Send, Linkedin, Twitter, Youtube, ShieldCheck } from "lucide-react";
+import { Globe, ArrowUpRight, Check, Send, Linkedin, Instagram, ShieldCheck } from "lucide-react";
+import Logo from "./Logo";
 
 export default function Footer() {
   const [newsletterEmail, setNewsletterEmail] = useState("");
@@ -22,80 +23,56 @@ export default function Footer() {
           
           {/* Column 1: Brand & Licenses disclosures */}
           <div className="lg:col-span-4 flex flex-col items-start">
-            <a href="#" className="flex items-center gap-3 mb-6 group">
-              <div className="p-2 rounded-lg bg-brand-accent/20">
-                <Globe className="h-6 w-6 text-brand-accent animate-pulse" />
-              </div>
-              <div>
-                <span className="text-xl font-extrabold tracking-wider text-white">
-                  VANGUARD<span className="text-[#d4af37]">GLOBAL</span>
-                </span>
-                <span className="block text-[8px] font-mono tracking-widest text-slate-400 uppercase">
-                  B2B Trade Brokerage S.A.
-                </span>
-              </div>
+            <a href="#" className="flex items-center mb-6 group">
+              <Logo size="md" theme="dark" />
             </a>
             
             <p className="text-xs text-slate-400 leading-relaxed mb-6">
-              Vanguard Global Trade is an authorized international B2B trading conglomerate. We secure raw industrial metal, agricultural crop commodities, textiles, and hardware console slots across bilateral trade conduits.
+              IndoEx Global is an authorized international B2B trading conglomerate. We secure raw industrial metal, agricultural crop commodities, textiles, and hardware console slots across bilateral trade conduits.
             </p>
 
             {/* Social icons */}
             <div className="flex items-center gap-3">
-              <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-brand-accent/20 text-slate-400 hover:text-brand-accent transition-colors">
+              <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-brand-accent/20 text-slate-400 hover:text-brand-accent transition-colors" aria-label="LinkedIn">
                 <Linkedin className="h-4 w-4" />
               </a>
-              <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-brand-accent/20 text-slate-400 hover:text-brand-accent transition-colors">
-                <Twitter className="h-4 w-4" />
-              </a>
-              <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-brand-accent/20 text-slate-400 hover:text-brand-accent transition-colors">
-                <Youtube className="h-4 w-4" />
+              <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-brand-accent/20 text-slate-400 hover:text-brand-accent transition-colors" aria-label="Instagram">
+                <Instagram className="h-4 w-4" />
               </a>
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
-          <div className="lg:col-span-2">
+          {/* Column 2 & 3: Corporate Headquarters */}
+          <div className="lg:col-span-5">
             <h4 className="text-xs font-mono font-bold tracking-widest uppercase text-brand-accent mb-6">
-              Sourcing Desks
+              Corporate Headquarters
             </h4>
-            <ul className="space-y-3 text-xs text-slate-400">
-              <li>
-                <a href="#about" className="hover:text-white transition-colors">About Us</a>
-              </li>
-              <li>
-                <a href="#products" className="hover:text-white transition-colors">Commodities Catalog</a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-white transition-colors">EXIM Trading Desk</a>
-              </li>
-              <li>
-                <a href="#trade" className="hover:text-white transition-colors">Bilateral Corridors</a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Corporate Contacts */}
-          <div className="lg:col-span-3">
-            <h4 className="text-xs font-mono font-bold tracking-widest uppercase text-brand-accent mb-6">
-              Secure EXIM Desks
-            </h4>
-            <ul className="space-y-3.5 text-xs text-slate-400">
-              <li className="flex flex-col">
-                <span className="font-semibold text-white">Central Operations Desk</span>
-                <span className="mt-1">74 Trade Winds Blvd, NY 10005</span>
-              </li>
-              <li className="flex flex-col">
-                <span className="font-semibold text-white">Direct Trade Queries</span>
-                <a href="mailto:trade@vanguardglobal.com" className="text-brand-accent hover:underline mt-1 font-mono">
-                  trade@vanguardglobal.com
-                </a>
-              </li>
-              <li className="flex flex-col">
-                <span className="font-semibold text-white">SGS Audit Desk</span>
-                <span className="mt-1">audit@vanguardglobal.com</span>
-              </li>
-            </ul>
+            <div className="space-y-4 text-xs text-slate-400">
+              <div className="flex gap-2.5 items-start">
+                <span className="text-base shrink-0 leading-none mt-0.5">📍</span>
+                <p className="leading-relaxed text-slate-300">
+                  1st Floor, Wing-A, Mudra Commercial Building, Office No. 08, Above P.N. Gadgil & Sons, Satara Road, Bibwewadi, Pune – 411037, Maharashtra, India
+                </p>
+              </div>
+              <div className="flex gap-2.5 items-center">
+                <span className="text-sm shrink-0 leading-none">📧</span>
+                <p className="text-slate-300">
+                  Email: <a href="mailto:info@indoexglobal.in" className="underline hover:text-brand-accent font-mono font-bold">info@indoexglobal.in</a>
+                </p>
+              </div>
+              <div className="flex gap-2.5 items-center">
+                <span className="text-sm shrink-0 leading-none">📞</span>
+                <p className="text-slate-300">
+                  Phone: <a href="tel:+917972875589" className="hover:text-brand-accent font-mono font-bold">+91 79728 75589</a>
+                </p>
+              </div>
+              <div className="flex gap-2.5 items-center">
+                <span className="text-sm shrink-0 leading-none">📋</span>
+                <p className="text-slate-300">
+                  IEC: <span className="font-mono bg-white/5 border border-white/10 px-2.5 py-0.5 rounded text-brand-accent text-xs font-bold">AAICI7881E</span>
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Column 4: Newsletter Sourcing Alerts */}
@@ -133,11 +110,10 @@ export default function Footer() {
           </div>
 
         </div>
-
         {/* Bottom Bar: disclosures and copyright */}
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-400">
           <div className="flex flex-wrap gap-4 items-center justify-center md:justify-start">
-            <span>© {new Date().getFullYear()} Vanguard Global Trade. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} IndoEx Global. All rights reserved.</span>
             <span className="text-slate-600">|</span>
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <span className="text-slate-600">|</span>

@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 
 export default function WhatsAppButton() {
   const whatsappNumber = "+12125558290"; // Central exim trading desk number
-  const initialText = "Hello Vanguard Trade Desk, I am interested in bulk B2B commodity sourcing. Please connect us with a Trade Specialist.";
+  const initialText = "Hello IndoEx Trade Desk, I am interested in bulk B2B commodity sourcing. Please connect us with a Trade Specialist.";
   
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(initialText)}`;
 

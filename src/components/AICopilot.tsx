@@ -14,7 +14,7 @@ export default function AICopilot() {
     {
       id: "init",
       sender: "copilot",
-      text: "Hello! I am Vanguard's B2B AI Sourcing Copilot. I can assist you with global trade regulations, Harmonized System (HS) classifications, transit cargo requirements, and custom specifications drafting. How can I assist your import desk today?"
+      text: "Hello! I am IndoEx Global's B2B AI Sourcing Copilot. I can assist you with global trade regulations, Harmonized System (HS) classifications, transit cargo requirements, and custom specifications drafting. How can I assist your import desk today?"
     }
   ]);
   const [input, setInput] = useState("");
@@ -73,7 +73,7 @@ export default function AICopilot() {
         {
           id: `err-${Date.now()}`,
           sender: "copilot",
-          text: "I apologize, but I am experiencing temporary trade corridor connection issues. Please try re-sending or reach our physical desk at trade@vanguardglobal.com."
+          text: "I apologize, but I am experiencing temporary trade corridor connection issues. Please try re-sending or reach our physical desk at trade@indoexglobal.com."
         }
       ]);
     } finally {
@@ -90,8 +90,8 @@ export default function AICopilot() {
       // Headers like ### or ##
       if (cleaned.startsWith("###") || cleaned.startsWith("##")) {
         return (
-          <h4 key={idx} className="text-sm font-extrabold text-white mt-3 mb-1.5 font-display flex items-center gap-1">
-            <Sparkles className="h-3.5 w-3.5 text-brand-accent shrink-0" />
+          <h4 key={idx} className="text-sm font-extrabold text-[#0A0F1A] mt-3 mb-1.5 font-display flex items-center gap-1">
+            <Sparkles className="h-3.5 w-3.5 text-[#bda02a] shrink-0" />
             {cleaned.replace(/^[#\s]+/, "")}
           </h4>
         );
@@ -100,8 +100,8 @@ export default function AICopilot() {
       // Unordered list items like - or *
       if (cleaned.startsWith("-") || cleaned.startsWith("*")) {
         return (
-          <div key={idx} className="flex gap-2 text-xs text-slate-300 ml-2 py-0.5 items-start">
-            <span className="text-brand-accent shrink-0 mt-1">•</span>
+          <div key={idx} className="flex gap-2 text-xs text-slate-600 ml-2 py-0.5 items-start">
+            <span className="text-[#bda02a] shrink-0 mt-1">•</span>
             <span>{cleaned.replace(/^[-*\s]+/, "")}</span>
           </div>
         );
@@ -112,13 +112,13 @@ export default function AICopilot() {
         // Simple bold highlight
         const parts = cleaned.split("**");
         return (
-          <p key={idx} className="text-xs text-slate-300 leading-relaxed py-1">
-            {parts.map((p, pIdx) => (pIdx % 2 === 1 ? <strong key={pIdx} className="text-brand-accent font-bold">{p}</strong> : p))}
+          <p key={idx} className="text-xs text-slate-600 leading-relaxed py-1">
+            {parts.map((p, pIdx) => (pIdx % 2 === 1 ? <strong key={pIdx} className="text-[#bda02a] font-bold">{p}</strong> : p))}
           </p>
         );
       }
 
-      return <p key={idx} className="text-xs text-slate-300 leading-relaxed py-1">{cleaned}</p>;
+      return <p key={idx} className="text-xs text-slate-600 leading-relaxed py-1">{cleaned}</p>;
     });
   };
 
@@ -128,11 +128,11 @@ export default function AICopilot() {
       <button
         id="copilot-floating-btn"
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-24 right-6 z-40 p-4 rounded-full bg-brand-primary text-brand-accent hover:bg-brand-secondary border border-brand-accent/30 hover:border-brand-accent/60 shadow-2xl transition-all duration-300 group scale-100 hover:scale-105 hover:rotate-3"
+        className="fixed bottom-24 right-6 z-40 p-4 rounded-full bg-[#0A0F1A] text-white hover:bg-slate-800 border border-slate-700 shadow-2xl transition-all duration-300 group scale-100 hover:scale-105 hover:rotate-3 cursor-pointer"
         title="Open Trade AI Copilot"
       >
-        <MessageSquareCode className="h-6 w-6 text-brand-accent" />
-        <span className="absolute right-12 top-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 bg-brand-primary border border-brand-accent/20 px-3 py-1.5 rounded-lg text-[10px] font-mono tracking-wider font-bold text-white uppercase transition-all duration-200">
+        <MessageSquareCode className="h-6 w-6 text-[#d4af37]" />
+        <span className="absolute right-12 top-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 bg-[#0A0F1A] border border-slate-700 px-3 py-1.5 rounded-lg text-[10px] font-mono tracking-wider font-bold text-white uppercase transition-all duration-200">
           AI Sourcing Agent
         </span>
       </button>
@@ -145,35 +145,35 @@ export default function AICopilot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.95 }}
             transition={{ duration: 0.3 }}
-            className="fixed bottom-6 right-6 z-50 w-[380px] sm:w-[420px] max-w-[calc(100vw-32px)] h-[580px] bg-brand-primary rounded-2xl border border-white/10 shadow-2xl flex flex-col overflow-hidden"
+            className="fixed bottom-6 right-6 z-50 w-[380px] sm:w-[420px] max-w-[calc(100vw-32px)] h-[580px] bg-white rounded-2xl border border-slate-200 shadow-2xl flex flex-col overflow-hidden"
           >
             {/* Header */}
-            <div className="p-4 bg-brand-secondary border-b border-white/10 flex items-center justify-between">
+            <div className="p-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-brand-accent/15 text-brand-accent border border-brand-accent/20">
+                <div className="p-2 rounded-lg bg-slate-100 text-[#bda02a] border border-slate-200">
                   <Bot className="h-5 w-5" />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-sm font-extrabold text-white leading-none flex items-center gap-1.5">
+                  <h3 className="text-sm font-extrabold text-[#0A0F1A] leading-none flex items-center gap-1.5">
                     EXIM Sourcing Agent
-                    <ShieldCheck className="h-4 w-4 text-green-400 shrink-0" />
+                    <ShieldCheck className="h-4 w-4 text-green-600 shrink-0" />
                   </h3>
-                  <span className="text-[10px] text-brand-accent font-mono uppercase tracking-widest block mt-1">
-                    Online • Vanguard AI Copilot
+                  <span className="text-[10px] text-[#bda02a] font-mono uppercase tracking-widest block mt-1">
+                    Online • IndoEx Global AI Copilot
                   </span>
                 </div>
               </div>
 
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-1.5 rounded-lg hover:bg-white/10 text-slate-400 hover:text-white transition-colors"
+                className="p-1.5 rounded-lg hover:bg-slate-200 text-slate-500 hover:text-slate-900 transition-colors cursor-pointer"
               >
                 <X className="h-5 w-5" />
               </button>
             </div>
 
             {/* Chat Body */}
-            <div className="flex-grow p-4 overflow-y-auto space-y-4 scroll-smooth">
+            <div className="flex-grow p-4 overflow-y-auto space-y-4 scroll-smooth bg-white">
               {messages.map((msg) => {
                 const isCopilot = msg.sender === "copilot";
                 return (
@@ -182,15 +182,15 @@ export default function AICopilot() {
                     className={`flex gap-3 max-w-[85%] text-left ${isCopilot ? "mr-auto" : "ml-auto flex-row-reverse"}`}
                   >
                     {isCopilot && (
-                      <div className="p-1.5 rounded-lg bg-slate-800 border border-white/10 h-fit text-brand-accent shrink-0">
+                      <div className="p-1.5 rounded-lg bg-slate-100 border border-slate-200 h-fit text-[#bda02a] shrink-0">
                         <Bot className="h-4 w-4" />
                       </div>
                     )}
                     <div
                       className={`p-3.5 rounded-2xl text-xs leading-relaxed ${
                         isCopilot
-                          ? "bg-brand-secondary text-slate-100 border border-white/5 rounded-tl-none"
-                          : "bg-brand-accent text-brand-primary font-medium rounded-tr-none shadow-md shadow-brand-accent/10"
+                          ? "bg-slate-50 text-slate-800 border border-slate-200/50 rounded-tl-none"
+                          : "bg-[#0A0F1A] text-white font-medium rounded-tr-none shadow-md shadow-slate-900/10"
                       }`}
                     >
                       {isCopilot ? parseMessageText(msg.text) : msg.text}
@@ -202,10 +202,10 @@ export default function AICopilot() {
               {/* Typing Indicator */}
               {loading && (
                 <div className="flex gap-3 max-w-[80%] text-left mr-auto">
-                  <div className="p-1.5 rounded-lg bg-slate-800 border border-white/10 h-fit text-brand-accent shrink-0">
-                    <RefreshCw className="h-4 w-4 animate-spin text-brand-accent" />
+                  <div className="p-1.5 rounded-lg bg-slate-100 border border-slate-200 h-fit text-[#bda02a] shrink-0">
+                    <RefreshCw className="h-4 w-4 animate-spin text-[#bda02a]" />
                   </div>
-                  <div className="p-3.5 rounded-2xl bg-brand-secondary text-slate-400 border border-white/5 rounded-tl-none text-xs flex items-center gap-1.5">
+                  <div className="p-3.5 rounded-2xl bg-slate-50 text-slate-500 border border-slate-200/50 rounded-tl-none text-xs flex items-center gap-1.5">
                     Analyzing custom B2B trade metrics...
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function AICopilot() {
 
             {/* Quick Prompts Container (Only visible when thread is minimal) */}
             {messages.length === 1 && !loading && (
-              <div className="p-3 bg-brand-secondary/30 border-t border-white/5 text-left shrink-0">
+              <div className="p-3 bg-slate-50 border-t border-slate-100 text-left shrink-0">
                 <span className="text-[9px] font-mono text-slate-400 uppercase tracking-wider block mb-2 px-1">
                   SUGGESTED TRADE INQUIRIES
                 </span>
@@ -224,7 +224,7 @@ export default function AICopilot() {
                     <button
                       key={prompt}
                       onClick={() => handleSend(prompt)}
-                      className="px-2.5 py-1.5 rounded bg-brand-secondary hover:bg-slate-800 border border-white/5 hover:border-brand-accent/20 text-[10px] text-slate-300 hover:text-white transition-colors cursor-pointer"
+                      className="px-2.5 py-1.5 rounded bg-white hover:bg-slate-100 border border-slate-200 text-[10px] text-slate-600 hover:text-slate-900 transition-colors cursor-pointer"
                     >
                       {prompt}
                     </button>
@@ -239,7 +239,7 @@ export default function AICopilot() {
                 e.preventDefault();
                 handleSend(input);
               }}
-              className="p-3 bg-brand-secondary border-t border-white/10 flex gap-2 shrink-0 items-center"
+              className="p-3 bg-slate-50 border-t border-slate-200 flex gap-2 shrink-0 items-center"
             >
               <input
                 type="text"
@@ -247,14 +247,14 @@ export default function AICopilot() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask about HS codes, L/C, ocean slots..."
-                className="flex-grow px-4 py-3.5 rounded-xl border border-white/10 bg-brand-primary text-white text-xs outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all placeholder:text-slate-500"
+                className="flex-grow px-4 py-3.5 rounded-xl border border-slate-200 bg-white text-slate-800 text-xs outline-none focus:border-[#d4af37] focus:ring-1 focus:ring-[#d4af37] transition-all placeholder:text-slate-400"
               />
               <button
                 type="submit"
                 disabled={!input.trim() || loading}
-                className="p-3.5 rounded-xl bg-brand-accent text-brand-primary hover:opacity-90 disabled:opacity-40 transition-opacity flex items-center justify-center cursor-pointer shrink-0"
+                className="p-3.5 rounded-xl bg-[#0A0F1A] text-white hover:bg-slate-800 disabled:opacity-40 transition-all flex items-center justify-center cursor-pointer shrink-0"
               >
-                <Send className="h-4 w-4" />
+                <Send className="h-4 w-4 text-[#d4af37]" />
               </button>
             </form>
           </motion.div>

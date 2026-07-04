@@ -12,24 +12,24 @@ const iconMap: { [key: string]: any } = {
 
 export default function Industries() {
   return (
-    <section className="py-24 bg-brand-light dark:bg-transparent transition-colors duration-300 relative z-10">
+    <section className="py-14 sm:py-20 md:py-24 bg-brand-light relative z-10">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
           <span className="text-xs font-mono font-bold tracking-widest text-brand-accent uppercase bg-brand-accent/10 border border-brand-accent/20 px-3 py-1 rounded-full">
             Market Sectors
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-primary dark:text-white mt-4 tracking-tight uppercase">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-primary mt-3 sm:mt-4 tracking-tight uppercase">
             Industries Served Globally
           </h2>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-4 leading-relaxed">
+          <p className="text-sm text-slate-500 mt-3 sm:mt-4 leading-relaxed">
             Our trade brokers hold deep specialization across major commercial categories, ensuring compliance with strict sector-specific packaging and transit mandates.
           </p>
         </div>
 
         {/* Bento Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {INDUSTRIES.map((ind, idx) => {
             const IconComponent = iconMap[ind.icon] || Wrench;
             return (
@@ -39,7 +39,7 @@ export default function Industries() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="relative group h-80 rounded-3xl overflow-hidden shadow-md flex flex-col justify-end p-6 border border-slate-200/50 dark:border-white/10"
+                className="relative group h-72 sm:h-80 rounded-3xl overflow-hidden shadow-md flex flex-col justify-end p-5 sm:p-6 border border-slate-200/50"
               >
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0 z-0">

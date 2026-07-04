@@ -6,6 +6,7 @@ export interface ProductItem {
   specifications: string[];
   hsCode?: string;
   grade?: string;
+  subCategory?: string; // e.g. "Spices", "Dehydrated Powder", "Cereals"
 }
 
 export interface ProductCategory {
@@ -14,6 +15,7 @@ export interface ProductCategory {
   icon: string; // name of lucide-react icon
   description: string;
   items: ProductItem[];
+  subCategories?: string[];
 }
 
 export interface ServiceItem {
