@@ -9,6 +9,8 @@ import {
   FAQItem 
 } from "./types";
 
+import turmericFingers from "./Imgs/turmeric-fingers.png";
+
 export const PRODUCT_CATEGORIES: ProductCategory[] = [
   {
     id: "agricultural-products",
@@ -21,7 +23,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         id: "spices-pepper",
         name: "Turmeric Fingers",
         description: "Premium export-quality turmeric fingers carefully selected for their rich natural colour, excellent aroma, and high purity. Ideal for food processing.",
-        image: "/src/Imgs/turmeric fingers.png",
+        image: turmericFingers,
         hsCode: "09103020",
         subCategory: "Spices"
       },
