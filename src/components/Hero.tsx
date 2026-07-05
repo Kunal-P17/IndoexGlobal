@@ -11,7 +11,7 @@ export default function Hero() {
         <img
           src={heroimg}
           alt="Logistics freighter container ship"
-          className="w-full h-full object-cover opacity-25 transform scale-100 transition-opacity duration-300"
+          className="w-full h-full object-cover opacity-40 transform scale-100 transition-opacity duration-300"
           referrerPolicy="no-referrer"
         />
         {/* Gradients to mask the bottom and sides for perfect legibility */}
