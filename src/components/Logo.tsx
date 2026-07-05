@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/logo.png";
 
 interface LogoProps {
   className?: string;
@@ -18,21 +19,42 @@ export function LogoIcon({ className = "h-12 w-12" }: { className?: string }) {
     >
       <defs>
         {/* Globe Gradient */}
-        <linearGradient id="globeGrad" x1="100" y1="40" x2="300" y2="340" gradientUnits="userSpaceOnUse">
+        <linearGradient
+          id="globeGrad"
+          x1="100"
+          y1="40"
+          x2="300"
+          y2="340"
+          gradientUnits="userSpaceOnUse"
+        >
           <stop offset="0%" stopColor="#2563EB" />
           <stop offset="40%" stopColor="#1E40AF" />
           <stop offset="100%" stopColor="#0B1E5B" />
         </linearGradient>
 
         {/* Orange Swoosh Gradient */}
-        <linearGradient id="orangeSwoosh" x1="100" y1="280" x2="320" y2="100" gradientUnits="userSpaceOnUse">
+        <linearGradient
+          id="orangeSwoosh"
+          x1="100"
+          y1="280"
+          x2="320"
+          y2="100"
+          gradientUnits="userSpaceOnUse"
+        >
           <stop offset="0%" stopColor="#EA580C" />
           <stop offset="60%" stopColor="#F97316" />
           <stop offset="100%" stopColor="#FBBF24" />
         </linearGradient>
 
         {/* Silver Swoosh Gradient */}
-        <linearGradient id="silverSwoosh" x1="200" y1="280" x2="340" y2="120" gradientUnits="userSpaceOnUse">
+        <linearGradient
+          id="silverSwoosh"
+          x1="200"
+          y1="280"
+          x2="340"
+          y2="120"
+          gradientUnits="userSpaceOnUse"
+        >
           <stop offset="0%" stopColor="#64748B" />
           <stop offset="50%" stopColor="#CBD5E1" />
           <stop offset="100%" stopColor="#F8FAFC" />
@@ -62,9 +84,36 @@ export function LogoIcon({ className = "h-12 w-12" }: { className?: string }) {
       <circle cx="200" cy="200" r="110" fill="url(#globeGrad)" />
 
       {/* Grid Lines (Latitude/Longitude for depth) */}
-      <ellipse cx="200" cy="200" rx="110" ry="40" stroke="rgba(255,255,255,0.08)" strokeWidth="2" fill="none" transform="rotate(-15 200 200)" />
-      <ellipse cx="200" cy="200" rx="110" ry="75" stroke="rgba(255,255,255,0.06)" strokeWidth="1.5" fill="none" transform="rotate(-15 200 200)" />
-      <ellipse cx="200" cy="200" rx="40" ry="110" stroke="rgba(255,255,255,0.08)" strokeWidth="2" fill="none" transform="rotate(-15 200 200)" />
+      <ellipse
+        cx="200"
+        cy="200"
+        rx="110"
+        ry="40"
+        stroke="rgba(255,255,255,0.08)"
+        strokeWidth="2"
+        fill="none"
+        transform="rotate(-15 200 200)"
+      />
+      <ellipse
+        cx="200"
+        cy="200"
+        rx="110"
+        ry="75"
+        stroke="rgba(255,255,255,0.06)"
+        strokeWidth="1.5"
+        fill="none"
+        transform="rotate(-15 200 200)"
+      />
+      <ellipse
+        cx="200"
+        cy="200"
+        rx="40"
+        ry="110"
+        stroke="rgba(255,255,255,0.08)"
+        strokeWidth="2"
+        fill="none"
+        transform="rotate(-15 200 200)"
+      />
 
       {/* Landmass shapes (Stylized Green Continents) */}
       {/* North America / Asia outline */}
@@ -89,37 +138,222 @@ export function LogoIcon({ className = "h-12 w-12" }: { className?: string }) {
       {/* 2. Container Terminal Stack (On left side of globe) */}
       <g transform="translate(10, -5)" filter="url(#shadow)">
         {/* Row 1 */}
-        <rect x="110" y="160" width="34" height="20" rx="2" fill="url(#containerRed)" stroke="#7F1D1D" strokeWidth="0.5" />
-        <line x1="117" y1="160" x2="117" y2="180" stroke="#7F1D1D" strokeWidth="0.5" />
-        <line x1="124" y1="160" x2="124" y2="180" stroke="#7F1D1D" strokeWidth="0.5" />
-        <line x1="131" y1="160" x2="131" y2="180" stroke="#7F1D1D" strokeWidth="0.5" />
-        <line x1="138" y1="160" x2="138" y2="180" stroke="#7F1D1D" strokeWidth="0.5" />
+        <rect
+          x="110"
+          y="160"
+          width="34"
+          height="20"
+          rx="2"
+          fill="url(#containerRed)"
+          stroke="#7F1D1D"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="117"
+          y1="160"
+          x2="117"
+          y2="180"
+          stroke="#7F1D1D"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="124"
+          y1="160"
+          x2="124"
+          y2="180"
+          stroke="#7F1D1D"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="131"
+          y1="160"
+          x2="131"
+          y2="180"
+          stroke="#7F1D1D"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="138"
+          y1="160"
+          x2="138"
+          y2="180"
+          stroke="#7F1D1D"
+          strokeWidth="0.5"
+        />
 
-        <rect x="145" y="152" width="34" height="20" rx="2" fill="url(#containerYellow)" stroke="#78350F" strokeWidth="0.5" />
-        <line x1="152" y1="152" x2="152" y2="172" stroke="#78350F" strokeWidth="0.5" />
-        <line x1="159" y1="152" x2="159" y2="172" stroke="#78350F" strokeWidth="0.5" />
-        <line x1="166" y1="152" x2="166" y2="172" stroke="#78350F" strokeWidth="0.5" />
-        <line x1="173" y1="152" x2="173" y2="172" stroke="#78350F" strokeWidth="0.5" />
+        <rect
+          x="145"
+          y="152"
+          width="34"
+          height="20"
+          rx="2"
+          fill="url(#containerYellow)"
+          stroke="#78350F"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="152"
+          y1="152"
+          x2="152"
+          y2="172"
+          stroke="#78350F"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="159"
+          y1="152"
+          x2="159"
+          y2="172"
+          stroke="#78350F"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="166"
+          y1="152"
+          x2="166"
+          y2="172"
+          stroke="#78350F"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="173"
+          y1="152"
+          x2="173"
+          y2="172"
+          stroke="#78350F"
+          strokeWidth="0.5"
+        />
 
         {/* Row 2 */}
-        <rect x="116" y="141" width="34" height="20" rx="2" fill="url(#containerBlue)" stroke="#1E3A8A" strokeWidth="0.5" />
-        <line x1="123" y1="141" x2="123" y2="161" stroke="#1E3A8A" strokeWidth="0.5" />
-        <line x1="130" y1="141" x2="130" y2="161" stroke="#1E3A8A" strokeWidth="0.5" />
-        <line x1="137" y1="141" x2="137" y2="161" stroke="#1E3A8A" strokeWidth="0.5" />
-        <line x1="144" y1="141" x2="144" y2="161" stroke="#1E3A8A" strokeWidth="0.5" />
+        <rect
+          x="116"
+          y="141"
+          width="34"
+          height="20"
+          rx="2"
+          fill="url(#containerBlue)"
+          stroke="#1E3A8A"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="123"
+          y1="141"
+          x2="123"
+          y2="161"
+          stroke="#1E3A8A"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="130"
+          y1="141"
+          x2="130"
+          y2="161"
+          stroke="#1E3A8A"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="137"
+          y1="141"
+          x2="137"
+          y2="161"
+          stroke="#1E3A8A"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="144"
+          y1="141"
+          x2="144"
+          y2="161"
+          stroke="#1E3A8A"
+          strokeWidth="0.5"
+        />
 
-        <rect x="151" y="133" width="34" height="20" rx="2" fill="url(#containerRed)" stroke="#7F1D1D" strokeWidth="0.5" />
-        <line x1="158" y1="133" x2="158" y2="153" stroke="#7F1D1D" strokeWidth="0.5" />
-        <line x1="165" y1="133" x2="165" y2="153" stroke="#7F1D1D" strokeWidth="0.5" />
-        <line x1="172" y1="133" x2="172" y2="153" stroke="#7F1D1D" strokeWidth="0.5" />
-        <line x1="179" y1="133" x2="179" y2="153" stroke="#7F1D1D" strokeWidth="0.5" />
+        <rect
+          x="151"
+          y="133"
+          width="34"
+          height="20"
+          rx="2"
+          fill="url(#containerRed)"
+          stroke="#7F1D1D"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="158"
+          y1="133"
+          x2="158"
+          y2="153"
+          stroke="#7F1D1D"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="165"
+          y1="133"
+          x2="165"
+          y2="153"
+          stroke="#7F1D1D"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="172"
+          y1="133"
+          x2="172"
+          y2="153"
+          stroke="#7F1D1D"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="179"
+          y1="133"
+          x2="179"
+          y2="153"
+          stroke="#7F1D1D"
+          strokeWidth="0.5"
+        />
 
         {/* Row 3 */}
-        <rect x="135" y="114" width="34" height="20" rx="2" fill="url(#containerBlue)" stroke="#1E3A8A" strokeWidth="0.5" />
-        <line x1="142" y1="114" x2="142" y2="134" stroke="#1E3A8A" strokeWidth="0.5" />
-        <line x1="149" y1="114" x2="149" y2="134" stroke="#1E3A8A" strokeWidth="0.5" />
-        <line x1="156" y1="114" x2="156" y2="134" stroke="#1E3A8A" strokeWidth="0.5" />
-        <line x1="163" y1="114" x2="163" y2="134" stroke="#1E3A8A" strokeWidth="0.5" />
+        <rect
+          x="135"
+          y="114"
+          width="34"
+          height="20"
+          rx="2"
+          fill="url(#containerBlue)"
+          stroke="#1E3A8A"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="142"
+          y1="114"
+          x2="142"
+          y2="134"
+          stroke="#1E3A8A"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="149"
+          y1="114"
+          x2="149"
+          y2="134"
+          stroke="#1E3A8A"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="156"
+          y1="114"
+          x2="156"
+          y2="134"
+          stroke="#1E3A8A"
+          strokeWidth="0.5"
+        />
+        <line
+          x1="163"
+          y1="114"
+          x2="163"
+          y2="134"
+          stroke="#1E3A8A"
+          strokeWidth="0.5"
+        />
       </g>
 
       {/* 3. Silver Swoosh wrapping behind */}
@@ -145,7 +379,13 @@ export function LogoIcon({ className = "h-12 w-12" }: { className?: string }) {
       {/* 5. Airplane soaring at the top left */}
       <g transform="translate(60, 60) rotate(-12)" filter="url(#shadow)">
         {/* Vapor trail */}
-        <path d="M -50 40 Q -10 20, 10 10" stroke="rgba(255,255,255,0.4)" strokeWidth="3" strokeLinecap="round" fill="none" />
+        <path
+          d="M -50 40 Q -10 20, 10 10"
+          stroke="rgba(255,255,255,0.4)"
+          strokeWidth="3"
+          strokeLinecap="round"
+          fill="none"
+        />
         {/* Airplane body */}
         <path
           d="M 0 15 C 5 13, 20 5, 45 3 C 55 2, 60 4, 62 7 C 63 9, 60 11, 55 12 C 40 14, 25 17, 15 20 Z"
@@ -158,10 +398,7 @@ export function LogoIcon({ className = "h-12 w-12" }: { className?: string }) {
           d="M 20 8 L 8 -15 C 6 -18, 10 -18, 13 -15 L 30 5 Z"
           fill="#D1D5DB"
         />
-        <path
-          d="M 22 8 L 12 -12 L 15 -12 L 28 6 Z"
-          fill="#3B82F6"
-        />
+        <path d="M 22 8 L 12 -12 L 15 -12 L 28 6 Z" fill="#3B82F6" />
         {/* Small Wing (Bottom) */}
         <path
           d="M 25 12 L 35 28 C 37 31, 40 31, 38 28 L 30 11 Z"
@@ -193,8 +430,22 @@ export function LogoIcon({ className = "h-12 w-12" }: { className?: string }) {
         <rect x="120" y="2" width="28" height="15" fill="#F3F4F6" />
         <rect x="128" y="-4" width="15" height="6" fill="#E5E7EB" />
         {/* Radar mast */}
-        <line x1="135" y1="-4" x2="135" y2="-12" stroke="#374151" strokeWidth="1.5" />
-        <line x1="131" y1="-8" x2="139" y2="-8" stroke="#374151" strokeWidth="1" />
+        <line
+          x1="135"
+          y1="-4"
+          x2="135"
+          y2="-12"
+          stroke="#374151"
+          strokeWidth="1.5"
+        />
+        <line
+          x1="131"
+          y1="-8"
+          x2="139"
+          y2="-8"
+          stroke="#374151"
+          strokeWidth="1"
+        />
         {/* Windows */}
         <rect x="124" y="6" width="4" height="3" fill="#1E3A8A" />
         <rect x="132" y="6" width="4" height="3" fill="#1E3A8A" />
@@ -202,19 +453,100 @@ export function LogoIcon({ className = "h-12 w-12" }: { className?: string }) {
 
         {/* Ship Containers */}
         {/* Stack 1 */}
-        <rect x="35" y="7" width="16" height="10" rx="1" fill="url(#containerRed)" stroke="#7F1D1D" strokeWidth="0.3" />
-        <rect x="35" y="-3" width="16" height="10" rx="1" fill="url(#containerBlue)" stroke="#1E3A8A" strokeWidth="0.3" />
+        <rect
+          x="35"
+          y="7"
+          width="16"
+          height="10"
+          rx="1"
+          fill="url(#containerRed)"
+          stroke="#7F1D1D"
+          strokeWidth="0.3"
+        />
+        <rect
+          x="35"
+          y="-3"
+          width="16"
+          height="10"
+          rx="1"
+          fill="url(#containerBlue)"
+          stroke="#1E3A8A"
+          strokeWidth="0.3"
+        />
         {/* Stack 2 */}
-        <rect x="52" y="7" width="16" height="10" rx="1" fill="url(#containerYellow)" stroke="#78350F" strokeWidth="0.3" />
-        <rect x="52" y="-3" width="16" height="10" rx="1" fill="url(#containerRed)" stroke="#7F1D1D" strokeWidth="0.3" />
+        <rect
+          x="52"
+          y="7"
+          width="16"
+          height="10"
+          rx="1"
+          fill="url(#containerYellow)"
+          stroke="#78350F"
+          strokeWidth="0.3"
+        />
+        <rect
+          x="52"
+          y="-3"
+          width="16"
+          height="10"
+          rx="1"
+          fill="url(#containerRed)"
+          stroke="#7F1D1D"
+          strokeWidth="0.3"
+        />
         {/* Stack 3 */}
-        <rect x="69" y="7" width="16" height="10" rx="1" fill="url(#containerBlue)" stroke="#1E3A8A" strokeWidth="0.3" />
-        <rect x="69" y="-3" width="16" height="10" rx="1" fill="url(#containerYellow)" stroke="#78350F" strokeWidth="0.3" />
+        <rect
+          x="69"
+          y="7"
+          width="16"
+          height="10"
+          rx="1"
+          fill="url(#containerBlue)"
+          stroke="#1E3A8A"
+          strokeWidth="0.3"
+        />
+        <rect
+          x="69"
+          y="-3"
+          width="16"
+          height="10"
+          rx="1"
+          fill="url(#containerYellow)"
+          stroke="#78350F"
+          strokeWidth="0.3"
+        />
         {/* Stack 4 */}
-        <rect x="86" y="7" width="16" height="10" rx="1" fill="#10B981" stroke="#065F46" strokeWidth="0.3" />
-        <rect x="86" y="-3" width="16" height="10" rx="1" fill="url(#containerRed)" stroke="#7F1D1D" strokeWidth="0.3" />
+        <rect
+          x="86"
+          y="7"
+          width="16"
+          height="10"
+          rx="1"
+          fill="#10B981"
+          stroke="#065F46"
+          strokeWidth="0.3"
+        />
+        <rect
+          x="86"
+          y="-3"
+          width="16"
+          height="10"
+          rx="1"
+          fill="url(#containerRed)"
+          stroke="#7F1D1D"
+          strokeWidth="0.3"
+        />
         {/* Stack 5 */}
-        <rect x="103" y="7" width="15" height="10" rx="1" fill="url(#containerYellow)" stroke="#78350F" strokeWidth="0.3" />
+        <rect
+          x="103"
+          y="7"
+          width="15"
+          height="10"
+          rx="1"
+          fill="url(#containerYellow)"
+          stroke="#78350F"
+          strokeWidth="0.3"
+        />
 
         {/* Waves under the ship */}
         <path
@@ -274,7 +606,11 @@ export default function Logo({
   return (
     <div className={`flex items-center gap-3.5 ${className}`}>
       {/* 1. Logo Vector Graphic Icon */}
-      <img src="/logo.png" alt="Indoex Global Logo" className={`${iconSizes[size]} shrink-0 object-contain`} />
+      <img
+        src={logo}
+        alt="Indoex Global Logo"
+        className={`${iconSizes[size]} shrink-0 object-contain`}
+      />
 
       {/* 2. Text Brand & Tagline Portion */}
       {!iconOnly && (
@@ -289,14 +625,18 @@ export default function Logo({
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500 font-extrabold relative">
               EX
             </span>
-            <span className={`ml-1.5 font-bold ${isDark ? "text-slate-200" : "text-[#1E40AF]"}`}>
+            <span
+              className={`ml-1.5 font-bold ${isDark ? "text-slate-200" : "text-[#1E40AF]"}`}
+            >
               GLOBAL
             </span>
           </span>
 
           {/* Subtitle Tagline: "Built on Trust. Driven by Trade" (with horizontal split design) */}
           <div className="flex items-center gap-1.5 mt-0.5 w-full">
-            <span className={`h-[1px] bg-gradient-to-r ${isDark ? "from-white/20 to-transparent" : "from-slate-300 to-transparent"} flex-1`} />
+            <span
+              className={`h-[1px] bg-gradient-to-r ${isDark ? "from-white/20 to-transparent" : "from-slate-300 to-transparent"} flex-1`}
+            />
             <span
               className={`italic font-medium shrink-0 tracking-wide font-sans ${
                 textSizes[size].tagline
@@ -304,7 +644,9 @@ export default function Logo({
             >
               Built on Trust. Driven by Trade
             </span>
-            <span className={`h-[1px] bg-gradient-to-l ${isDark ? "from-white/20 to-transparent" : "from-slate-300 to-transparent"} flex-1`} />
+            <span
+              className={`h-[1px] bg-gradient-to-l ${isDark ? "from-white/20 to-transparent" : "from-slate-300 to-transparent"} flex-1`}
+            />
           </div>
         </div>
       )}
