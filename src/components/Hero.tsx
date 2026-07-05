@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import heroimg from "../Imgs/hero-img.png";
 
 export default function Hero() {
   return (
@@ -8,7 +9,7 @@ export default function Hero() {
       {/* Background Graphic Image with Light Overlays */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=1920"
+          src={heroimg}
           alt="Logistics freighter container ship"
           className="w-full h-full object-cover opacity-25 transform scale-100 transition-opacity duration-300"
           referrerPolicy="no-referrer"
