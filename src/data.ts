@@ -251,36 +251,14 @@ export const TRADE_COUNTRIES: TradeCountry[] = [
 
 export const CERTIFICATIONS: CertificationItem[] = [
   {
-    id: "cert-iso",
-    name: "ISO 9001:2015",
-    authority: "International Quality Management Standard",
-    logoText: "ISO",
-    number: "QMS-094838-A2",
-    validity: "Expires Dec 2028"
+    id: "cert-udyam",
+    name: "MSME (Udyam) Registration",
+    logoText: "MSME",
   },
   {
-    id: "cert-sgs",
-    name: "SGS Verified Trader",
-    authority: "Société Générale de Surveillance S.A.",
-    logoText: "SGS",
-    number: "SGS-IND-94883-T",
-    validity: "Verified Annually"
-  },
-  {
-    id: "cert-fda",
-    name: "FDA Registered Facility",
-    authority: "U.S. Food & Drug Administration",
-    logoText: "FDA",
-    number: "FDA-Reg-104958392",
-    validity: "Current Active Status"
-  },
-  {
-    id: "cert-gots",
-    name: "GOTS Organic Standard",
-    authority: "Global Organic Textile Standard",
-    logoText: "GOTS",
-    number: "GOTS-TX-394827",
-    validity: "Expires Oct 2027"
+    id: "cert-iec",
+    name: "IEC - Import Export Code",
+    logoText: "IEC"
   }
 ];
 

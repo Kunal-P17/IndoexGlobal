@@ -43,10 +43,7 @@ export interface TradeCountry {
 export interface CertificationItem {
   id: string;
   name: string;
-  authority: string;
   logoText: string;
-  number: string;
-  validity: string;
 }
 
 export interface GalleryItem {
