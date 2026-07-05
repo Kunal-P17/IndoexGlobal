@@ -103,7 +103,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between text-slate-500 text-xs">
               <span>Trade Inquiries:</span>
               <a href="mailto:trade@indoexglobal.com" className="text-brand-accent font-mono font-semibold">
-                trade@indoexglobal.com
+                info@indoexglobal.in
               </a>
             </div>
 
