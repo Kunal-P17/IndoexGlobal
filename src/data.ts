@@ -281,7 +281,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
     id: "cert-iec",
     name: "IEC - Import Export Code",
     logoText: "IEC",
-  },
+  }
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [

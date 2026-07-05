@@ -41,21 +41,8 @@ export default function Certifications() {
                 <h3 className="text-base font-bold text-brand-primary mb-1.5 leading-snug">
                   {cert.name}
                 </h3>
-                <p className="text-xs text-slate-500 leading-normal mb-4">
-                  {cert.authority}
-                </p>
               </div>
 
-              <div className="border-t border-slate-100 pt-3 mt-4 text-[10px] font-mono text-slate-400 flex flex-col gap-1">
-                <span className="flex items-center gap-1.5">
-                  <KeyRound className="h-3.5 w-3.5 text-slate-400 shrink-0" />
-                  ID: {cert.number}
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <ShieldCheck className="h-3.5 w-3.5 text-green-500 shrink-0" />
-                  {cert.validity}
-                </span>
-              </div>
 
             </motion.div>
           ))}
