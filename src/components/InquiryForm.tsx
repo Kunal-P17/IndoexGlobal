@@ -101,7 +101,7 @@ export default function InquiryForm({ prefilledProductName, onClearPrefill }: In
                 <div>
                   <h4 className="text-xs font-mono text-slate-500 uppercase leading-none">Central Desk Office</h4>
                   <p className="text-sm font-bold text-slate-200 mt-1.5">
-                    74 Trade Winds Blvd, Suite 104, New York, NY 10005
+                    1st Floor, Wing-A, Mudra Commercial Building, Office No. 08, Above P.N. Gadgil & Sons, Satara Road, Bibwewadi, Pune – 411037, Maharashtra, India
                   </p>
                 </div>
               </div>
@@ -113,7 +113,7 @@ export default function InquiryForm({ prefilledProductName, onClearPrefill }: In
                 <div>
                   <h4 className="text-xs font-mono text-slate-500 uppercase leading-none">B2B Trade Line</h4>
                   <p className="text-sm font-bold text-slate-200 mt-1.5">
-                    +1 (212) 555-8290 (EXIM desk)
+                    +91 79728 75589
                   </p>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default function InquiryForm({ prefilledProductName, onClearPrefill }: In
                 <div>
                   <h4 className="text-xs font-mono text-slate-500 uppercase leading-none">Operational Hours</h4>
                   <p className="text-sm font-bold text-slate-200 mt-1.5">
-                    08:00 - 18:00 EST | Monday - Friday
+                    09:00 AM - 9:00 PM IST | Monday - Sunday
                   </p>
                 </div>
               </div>
@@ -135,7 +135,7 @@ export default function InquiryForm({ prefilledProductName, onClearPrefill }: In
             <div className="rounded-3xl overflow-hidden border border-slate-800 shadow-xl h-72">
               <iframe
                 title="IndoEx Global Central Trade Office HQ Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2882898734265!2d-74.0150244!3d40.705828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a16dfc63eef%3A0x89ea2bf4b19c8f38!2sWall%20St%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                src="https://maps.app.goo.gl/4LCQEtA126h25EfWA"
                 className="w-full h-full border-0 grayscale invert-[0.9] hue-rotate-180"
                 allowFullScreen={true}
                 loading="lazy"
@@ -285,9 +285,7 @@ export default function InquiryForm({ prefilledProductName, onClearPrefill }: In
                           className="w-full px-4 py-3.5 rounded-xl border border-slate-800 bg-slate-950/80 text-white text-sm outline-none focus:border-[#d4af37] focus:ring-1 focus:ring-[#d4af37]/30 transition-all cursor-pointer"
                         >
                           <option value="Agricultural Commodities" className="bg-[#0A0F1A] text-white">Agricultural Commodities</option>
-                          <option value="Industrial Raw Materials & Metals" className="bg-[#0A0F1A] text-white">Industrial Raw Materials & Metals</option>
-                          <option value="Textiles & Organic Apparel" className="bg-[#0A0F1A] text-white">Textiles & Organic Apparel</option>
-                          <option value="Industrial Electronics & Sensors" className="bg-[#0A0F1A] text-white">Industrial Electronics & Sensors</option>
+                          <option value="Industrial Raw Materials & Metals" className="bg-[#0A0F1A] text-white">Construction Material</option>
                         </select>
                       </div>
 
