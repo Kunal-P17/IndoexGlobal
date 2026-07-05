@@ -19,137 +19,82 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     items: [
       {
         id: "spices-pepper",
-        name: "Premium Bold Black Pepper",
-        description: "High-grade Malabar black pepper, steam-sterilized, high piperine content, and strictly audited for premium freshness.",
-        image: "https://images.unsplash.com/photo-1596790011568-d01c0db725f0?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Piperine Content: Min 5.5%",
-          "Moisture Content: Max 12.0%",
-          "Foreign Matter: Max 0.2%",
-          "Purity: 99.8% SGS Certified"
-        ],
-        hsCode: "0904.11.00",
-        grade: "Bold Malabar 550GL",
+        name: "Turmeric Fingers",
+        description: "Premium export-quality turmeric fingers carefully selected for their rich natural colour, excellent aroma, and high purity. Ideal for food processing.",
+        image: "/src/Imgs/turmeric fingers.png",
+        hsCode: "09103020",
         subCategory: "Spices"
       },
       {
         id: "spices-turmeric",
-        name: "High-Curcumin Alleppey Turmeric",
-        description: "Polished whole turmeric fingers and ground turmeric powder boasting exceptional color intensity and rich natural curcumin content.",
-        image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Curcumin Content: Min 5.0% to 6.5%",
-          "Moisture Content: Max 9.0%",
-          "Total Ash: Max 7.0%",
-          "Lead (Pb): Undetectable (FDA & EU Compliant)"
-        ],
-        hsCode: "0910.30.00",
-        grade: "Premium Alleppey Finger",
+        name: "Turmeric Powder",
+        description: "Premium export-quality turmeric powder with vibrant natural colour, rich aroma, and high curcumin content. Suitable for seasoning and spice blends.",
+        image: "/src/Imgs/Turmeric Powder.png",
+        hsCode: "09103030",
         subCategory: "Spices"
       },
       {
         id: "spices-cardamom",
-        name: "Premium Green Cardamom Pods",
-        description: "Bold green cardamom pods graded perfectly by size, offering full-bodied, highly fragrant seeds.",
-        image: "https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Size / Diameter: 7mm - 8mm+ (Bold)",
-          "Color: Deep Green",
-          "Volatile Oil: Min 1.5%",
-          "Immature Pods: Max 1.0%"
-        ],
-        hsCode: "0908.31.00",
-        grade: "Grade Extra Bold",
+        name: "Whole Red Chilli",
+        description: "Premium whole dried red chillies offering vibrant colour, balanced pungency, and superior quality for global food industries.",
+        image: "/src/Imgs/red chilli.png",
+        hsCode: "09042190",
         subCategory: "Spices"
       },
       {
         id: "dehydrated-onion",
-        name: "Premium Dehydrated Onion Powder",
-        description: "Made from fresh white onions. Retains strong natural flavor and sweetness with perfect solubility.",
-        image: "https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Appearance: Free-flowing creamish-white powder",
-          "Moisture Content: Max 4.0%",
-          "Flavor Retention: Min 95%",
-          "Pathogens: Absent per 25g"
-        ],
-        hsCode: "0712.20.00",
-        grade: "A-Grade Premium Food Grade",
-        subCategory: "Dehydrated Powder"
+        name: "Red Chilli Powder",
+        description: "Premium red chilli powder processed from selected chillies to deliver excellent colour, aroma, and pungency for international food applications.",
+        image: "/src/Imgs/red chilli powder.png",
+        hsCode: "09042211",
+        subCategory: "Spices"
       },
       {
         id: "dehydrated-garlic",
-        name: "Premium Dehydrated Garlic Powder",
-        description: "Finely ground garlic powder with a sharp, natural aroma and long shelf life, perfect for commercial seasonings.",
-        image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Moisture Content: Max 5.0%",
-          "Mesh Size: 80 - 100 mesh",
-          "Total Plate Count: Max 50,000 CFU/g",
-          "Heavy Metals: Undetectable"
-        ],
-        hsCode: "0712.90.13",
-        grade: "Premium Commercial Grade",
-        subCategory: "Dehydrated Powder"
+        name: "Cumin Seeds",
+        description: "High-purity cumin seeds with a strong aroma and authentic flavour, widely used in spice blends, seasoning, and food manufacturing.",
+        image: "/src/Imgs/cumin seeds.png",
+        hsCode: "09093129",
+        subCategory: "Spices"
       },
       {
         id: "dehydrated-ginger",
-        name: "Premium Dehydrated Ginger Powder",
-        description: "Ground from dried whole ginger rhizomes. Delivers a robust pungent heat and distinct warm aroma.",
-        image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Moisture Content: Max 8.0%",
-          "Volatile Oil: Min 1.5%",
-          "Starch Content: Min 50%",
-          "Insolubles: Max 0.5%"
-        ],
-        hsCode: "0910.11.00",
-        grade: "Fine Grade A",
+        name: "Black Pepper",
+        description: "Premium black pepper sourced from India's leading spice growing regions, offering exceptional aroma, flavour, and export-grade quality.",
+        image: "/src/Imgs/black pepper.png",
+        hsCode: "09041130",
+        subCategory: "Spices"
+      },
+      {
+        id: "cereals-ric",
+        name: "Moringa Powder",
+        description: "Premium nutrient-rich moringa powder processed from carefully selected leaves. Widely used in nutraceutical and health food industries.",
+        image: "/src/Imgs/moringa powder.png",
+        hsCode: "12119029",
+        subCategory: "Dehydrated Powder"
+      },
+      {
+        id: "cereals-wheat",
+        name: "Onion Powder",
+        description: "Finely processed dehydrated onion powder offering strong flavour, excellent consistency, and extended shelf life for food manufacturers.",
+        image: "/src/Imgs/onion powder.png",
+        hsCode: "07122000",
+        subCategory: "Dehydrated Powder"
+      },
+      {
+        id: "cereals-maize",
+        name: "Garlic Powder",
+        description: "Premium dehydrated garlic powder known for its rich aroma, pungent flavour, and extensive applications across the food industry",
+        image: "/src/Imgs/garlic powder.png",
+        hsCode: "07129040",
         subCategory: "Dehydrated Powder"
       },
       {
         id: "cereals-rice",
-        name: "Premium 1121 Extra Long Grain Basmati Rice",
-        description: "Fully matured aromatic long grain Basmati rice, boasting elegant elongation and non-sticky cooking characteristics.",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Average Grain Length: 8.35 mm+ (Before Cooking)",
-          "Purity Index: Min 95%",
-          "Admixture Content: Max 5.0%",
-          "Moisture Content: Max 12.0%"
-        ],
-        hsCode: "1006.30.20",
-        grade: "Matured 1121 Export Grade",
-        subCategory: "Cereals"
-      },
-      {
-        id: "cereals-wheat",
-        name: "Premium Non-GMO Milling Wheat",
-        description: "High-gluten milling wheat ideal for large-scale bread manufacturers and commercial flour mills worldwide.",
-        image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Protein Content: Min 13.5% (dry basis)",
-          "Moisture Content: Max 12.0%",
-          "Falling Number: Min 300 sec",
-          "Test Weight: Min 78 kg/hl"
-        ],
-        hsCode: "1001.99.00",
-        grade: "Grade A - Food Grade",
-        subCategory: "Cereals"
-      },
-      {
-        id: "cereals-maize",
-        name: "Premium Bulk Yellow Maize",
-        description: "High-energy yellow corn, thoroughly screened for aflatoxin and optimized for starch or animal feed manufacturing.",
-        image: "https://images.unsplash.com/photo-1551754625-70c904ab7239?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Moisture Content: Max 14.0%",
-          "Admixture Content: Max 1.5%",
-          "Damaged Kernels: Max 3.0%",
-          "Aflatoxin Count: Max 20 PPB"
-        ],
-        hsCode: "1005.90.00",
-        grade: "Premium Feed/Food Grade",
+        name: "Premium Rice (Non-Basmati)",
+        description: "Premium aromatic Indrayani rice cultivated in Maharashtra, appreciated for its soft texture, pleasant aroma, and authentic taste.",
+        image: "/src/Imgs/indrayani rice.png",
+        hsCode: "10063090",
         subCategory: "Cereals"
       }
     ]
@@ -162,45 +107,17 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     items: [
       {
         id: "construction-tiles",
-        name: "Double Charged Glazed Vitrified Tiles",
-        description: "High-density glazed tiles with ultra-low water absorption, built for elegant commercial and heavy residential flooring.",
-        image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Water Absorption: < 0.05% (ISO 13006)",
-          "Modulus of Rupture: Min 35 N/mm²",
-          "Thickness Options: 9.0mm - 12.0mm",
-          "Surface Finish: High Gloss / Matte / Satin"
-        ],
-        hsCode: "6907.21.00",
-        grade: "Premium Export AAA"
+        name: "Tiles & Flooring",
+        description: "Premium ceramic, vitrified, and porcelain tiles designed for residential, commercial, and infrastructure projects with exceptional durability.",
+        image: "/src/Imgs/tiles.png",
+        hsCode: "69010030",
       },
       {
         id: "construction-granite",
-        name: "Polished Natural Granite Slabs",
-        description: "Sourced from premier quarries. Uniform grains and exquisite compression strength make this granite perfect for luxury surfaces.",
-        image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Compressive Strength: 150 - 200 MPa",
-          "Water Absorption: 0.15% average",
-          "Slab Dimensions: Gangsaw Size (280cm x 160cm+)",
-          "Glossiness Index: 90+ Gloss Meter"
-        ],
-        hsCode: "6802.23.00",
-        grade: "First Choice Premium"
-      },
-      {
-        id: "construction-steel",
-        name: "Hot-Dipped Galvanized Steel Coils",
-        description: "Superior rust-resistant galvanized steel coils with uniform spangle for construction roofing and steel frameworks.",
-        image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800",
-        specifications: [
-          "Standard Compliance: ASTM A653 / EN10346",
-          "Zinc Coating: Z120 - Z275 g/m²",
-          "Thickness Range: 0.15mm - 4.5mm",
-          "Tensile Strength: 270 - 500 MPa"
-        ],
-        hsCode: "7210.49.00",
-        grade: "SGCC / DX51D"
+        name: "Granite",
+        description: "Premium Indian granite available in multiple colours and finishes for architectural, commercial, and infrastructure  projects worldwide.",
+        image: "/src/Imgs/granite.png",
+        hsCode: "68022310",
       }
     ]
   }

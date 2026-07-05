@@ -3,9 +3,7 @@ export interface ProductItem {
   name: string;
   description: string;
   image: string;
-  specifications: string[];
   hsCode?: string;
-  grade?: string;
   subCategory?: string; // e.g. "Spices", "Dehydrated Powder", "Cereals"
 }
 

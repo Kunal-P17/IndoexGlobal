@@ -333,21 +333,7 @@ export default function Products({ onSelectProductForInquiry }: ProductsProps) {
                     </table>
                   </div>
 
-                  {/* Bulleted Quality Parameters */}
-                  <div className="mb-8">
-                    <h4 className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#d4af37] mb-3 flex items-center gap-2">
-                      <CheckCircle2 className="h-4.5 w-4.5 text-[#d4af37]" />
-                      Quality Parameters & Standards
-                    </h4>
-                    <ul className="space-y-2 p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-100">
-                      {prod.specifications.map((spec: string, sidx: number) => (
-                        <li key={sidx} className="flex gap-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                          <span className="h-1.5 w-1.5 bg-[#d4af37] rounded-full shrink-0 mt-2" />
-                          <span>{spec}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+            
 
                   {/* Primary Call To Action */}
                   <button
