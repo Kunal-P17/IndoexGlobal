@@ -37,7 +37,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-sm sm:text-lg md:text-xl text-slate-600 leading-relaxed mb-6 sm:mb-8 max-w-2xl"
           >
-            IndoEx Global is a tier-1 international B2B operator, linking certified manufacturers with enterprise importers across 50+ countries. We handle multi-modal logistics, SGS pre-shipment inspections, and comprehensive custom clearances.
+            Connecting global markets with premium-quality agricultural products and construction materials sourced from trusted Indian manufacturers.
           </motion.p>
 
           {/* Action Buttons */}
