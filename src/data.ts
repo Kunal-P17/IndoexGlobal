@@ -10,6 +10,17 @@ import {
 } from "./types";
 
 import turmericFingers from "./Imgs/turmeric-fingers.png";
+import turmericPowder from "./Imgs/Turmeric-Powder.png";
+import wholeRedChilli from "./Imgs/red-chilli.png";
+import redChilliPowder from "./Imgs/red-chilli-powder.png";
+import cuminSeeds from "./Imgs/cumin-seeds.png";
+import blackPepper from "./Imgs/black-pepper.png";
+import moringaPowder from "./Imgs/moringa-powder.png";
+import onionPowder from "./Imgs/onion-powder.png";
+import garlicPowder from "./Imgs/garlic-powder.png";
+import rice from "./Imgs/indrayani-rice.png";
+import tiles from "./Imgs/tiles.png";
+import granite from "./Imgs/granite.png";
 
 export const PRODUCT_CATEGORIES: ProductCategory[] = [
   {
@@ -31,7 +42,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         id: "spices-turmeric",
         name: "Turmeric Powder",
         description: "Premium export-quality turmeric powder with vibrant natural colour, rich aroma, and high curcumin content. Suitable for seasoning and spice blends.",
-        image: "/src/Imgs/Turmeric Powder.png",
+        image: turmericPowder,
         hsCode: "09103030",
         subCategory: "Spices"
       },
@@ -39,7 +50,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         id: "spices-cardamom",
         name: "Whole Red Chilli",
         description: "Premium whole dried red chillies offering vibrant colour, balanced pungency, and superior quality for global food industries.",
-        image: "/src/Imgs/red chilli.png",
+        image: wholeRedChilli,
         hsCode: "09042190",
         subCategory: "Spices"
       },
@@ -47,7 +58,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         id: "dehydrated-onion",
         name: "Red Chilli Powder",
         description: "Premium red chilli powder processed from selected chillies to deliver excellent colour, aroma, and pungency for international food applications.",
-        image: "/src/Imgs/red chilli powder.png",
+        image: redChilliPowder,
         hsCode: "09042211",
         subCategory: "Spices"
       },
@@ -55,7 +66,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         id: "dehydrated-garlic",
         name: "Cumin Seeds",
         description: "High-purity cumin seeds with a strong aroma and authentic flavour, widely used in spice blends, seasoning, and food manufacturing.",
-        image: "/src/Imgs/cumin seeds.png",
+        image: cuminSeeds,
         hsCode: "09093129",
         subCategory: "Spices"
       },
@@ -63,7 +74,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         id: "dehydrated-ginger",
         name: "Black Pepper",
         description: "Premium black pepper sourced from India's leading spice growing regions, offering exceptional aroma, flavour, and export-grade quality.",
-        image: "/src/Imgs/black pepper.png",
+        image: blackPepper,
         hsCode: "09041130",
         subCategory: "Spices"
       },
@@ -71,7 +82,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         id: "cereals-ric",
         name: "Moringa Powder",
         description: "Premium nutrient-rich moringa powder processed from carefully selected leaves. Widely used in nutraceutical and health food industries.",
-        image: "/src/Imgs/moringa powder.png",
+        image: moringaPowder,
         hsCode: "12119029",
         subCategory: "Dehydrated Powder"
       },
@@ -79,7 +90,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         id: "cereals-wheat",
         name: "Onion Powder",
         description: "Finely processed dehydrated onion powder offering strong flavour, excellent consistency, and extended shelf life for food manufacturers.",
-        image: "/src/Imgs/onion powder.png",
+        image: onionPowder,
         hsCode: "07122000",
         subCategory: "Dehydrated Powder"
       },
@@ -87,7 +98,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         id: "cereals-maize",
         name: "Garlic Powder",
         description: "Premium dehydrated garlic powder known for its rich aroma, pungent flavour, and extensive applications across the food industry",
-        image: "/src/Imgs/garlic powder.png",
+        image: garlicPowder,
         hsCode: "07129040",
         subCategory: "Dehydrated Powder"
       },
@@ -95,7 +106,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         id: "cereals-rice",
         name: "Premium Rice (Non-Basmati)",
         description: "Premium aromatic Indrayani rice cultivated in Maharashtra, appreciated for its soft texture, pleasant aroma, and authentic taste.",
-        image: "/src/Imgs/indrayani rice.png",
+        image: rice,
         hsCode: "10063090",
         subCategory: "Cereals"
       }
@@ -111,14 +122,14 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         id: "construction-tiles",
         name: "Tiles & Flooring",
         description: "Premium ceramic, vitrified, and porcelain tiles designed for residential, commercial, and infrastructure projects with exceptional durability.",
-        image: "/src/Imgs/tiles.png",
+        image: tiles,
         hsCode: "69010030",
       },
       {
         id: "construction-granite",
         name: "Granite",
         description: "Premium Indian granite available in multiple colours and finishes for architectural, commercial, and infrastructure  projects worldwide.",
-        image: "/src/Imgs/granite.png",
+        image: granite,
         hsCode: "68022310",
       }
     ]
