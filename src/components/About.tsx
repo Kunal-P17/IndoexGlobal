@@ -9,7 +9,7 @@ import {
   MapPin, 
   ShieldCheck 
 } from "lucide-react";
-import whyus from "../Imgs/whyuss.jpeg";
+import whyus from "../Imgs/whyuss.png";
 
 export default function About() {
   const features = [
