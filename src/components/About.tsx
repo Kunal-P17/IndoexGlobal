@@ -9,6 +9,7 @@ import {
   MapPin, 
   ShieldCheck 
 } from "lucide-react";
+import whyus from "../Imgs/why-us.jpeg";
 
 export default function About() {
   const features = [
@@ -66,7 +67,7 @@ export default function About() {
             >
               {/* Ship Image */}
               <img
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200"
+                src={whyus}
                 alt="Aerial view of container ship at sea"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 referrerPolicy="no-referrer"
