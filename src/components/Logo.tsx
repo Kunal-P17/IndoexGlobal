@@ -274,7 +274,7 @@ export default function Logo({
   return (
     <div className={`flex items-center gap-3.5 ${className}`}>
       {/* 1. Logo Vector Graphic Icon */}
-      <LogoIcon className={`${iconSizes[size]} shrink-0`} />
+      <img src="/logo.png" alt="Indoex Global Logo" className={`${iconSizes[size]} shrink-0 object-contain`} />
 
       {/* 2. Text Brand & Tagline Portion */}
       {!iconOnly && (
