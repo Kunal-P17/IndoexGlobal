@@ -10,6 +10,7 @@ interface Message {
 
 export default function AICopilot() {
   const [isOpen, setIsOpen] = useState(false);
+  const API_URL = import.meta.env.VITE_API_URL;
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "init",
@@ -49,7 +50,7 @@ export default function AICopilot() {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/query", {
+      const response = await fetch(`${API_URL}/api/query`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: textToSend })
@@ -58,10 +59,10 @@ export default function AICopilot() {
 
       if (data.success) {
         const copilotMsg: Message = {
-          id: `cop-${Date.now()}`,
-          sender: "copilot",
-          text: data.text
-        };
+  id: `cop-${Date.now()}`,
+  sender: "copilot",
+  text: data.reply
+};
         setMessages((prev) => [...prev, copilotMsg]);
       } else {
         throw new Error(data.error);
