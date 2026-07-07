@@ -19,7 +19,6 @@ export default function InquiryForm({ prefilledProductName, onClearPrefill }: In
 
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<{ type: "success" | "error" | null; text: string }>({ type: null, text: "" });
-  const [ticketId, setTicketId] = useState<string | null>(null);
 
   useEffect(() => {
     if (prefilledProductName) {
@@ -35,6 +34,8 @@ export default function InquiryForm({ prefilledProductName, onClearPrefill }: In
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const API_URL = import.meta.env.VITE_API_URL;
+  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
@@ -46,7 +47,7 @@ export default function InquiryForm({ prefilledProductName, onClearPrefill }: In
     setStatus({ type: null, text: "" });
 
     try {
-      const response = await fetch("/api/inquiry", {
+      const response = await fetch(`${API_URL}/api/inquiry`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
@@ -55,7 +56,6 @@ export default function InquiryForm({ prefilledProductName, onClearPrefill }: In
 
       if (data.success) {
         setStatus({ type: "success", text: data.message });
-        setTicketId(`VGT-${Math.floor(100000 + Math.random() * 900000)}`);
         setFormData({
           name: "",
           email: "",
