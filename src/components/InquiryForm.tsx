@@ -173,15 +173,13 @@ export default function InquiryForm({ prefilledProductName, onClearPrefill }: In
                         <span>Lead Tracking Number</span>
                         <span className="text-green-400 font-bold uppercase">ACTIVE</span>
                       </div>
-                      <p className="text-base font-bold text-white font-mono">
-                        {ticketId}
-                      </p>
+                      
                     </div>
 
                     <button
                       onClick={() => {
                         setStatus({ type: null, text: "" });
-                        setTicketId(null);
+                        
                       }}
                       className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-[#d4af37] text-[#0A0F1A] hover:bg-[#e6c152] transition-colors"
                     >
