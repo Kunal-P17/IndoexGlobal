@@ -63,7 +63,7 @@ export default function Footer() {
               <div className="flex gap-2.5 items-center">
                 <span className="text-sm shrink-0 leading-none">📞</span>
                 <p className="text-slate-300">
-                  Phone: <a href="tel:+917972875589" className="hover:text-brand-accent font-mono font-bold">+91 79728 75589</a>
+                  Phone: <a href="tel:+919607011525" className="hover:text-brand-accent font-mono font-bold">+91 9607011525</a>
                 </p>
               </div>
               <div className="flex gap-2.5 items-center">

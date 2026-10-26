@@ -21,6 +21,13 @@ import garlicPowder from "./Imgs/garlic-powder.png";
 import rice from "./Imgs/indrayani-rice.png";
 import tiles from "./Imgs/tiles.png";
 import granite from "./Imgs/granite.png";
+import ir64pararice from "./Imgs/IR64-Parboiled-Rice.png";
+import brokenrice from "./Imgs/Broken-Rice.png";
+import grncardamom from "./Imgs/Green-Cardamom.png";
+import clove from "./Imgs/Clove.png";
+import stara from "./Imgs/star-ainse.png";
+import gingerpow from "./Imgs/Ginger-Powder.png";
+import rcn from "./Imgs/Raw-Cashew-Nut.png";
 
 export const PRODUCT_CATEGORIES: ProductCategory[] = [
   {
@@ -32,7 +39,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     subCategories: ["Spices", "Dehydrated Powder", "Cereals","Dry Fruits & Nuts"],
     items: [
       {
-        id: "spices-pepper",
+        id: "spices-turmeric_fingers",
         name: "Turmeric Fingers",
         description:
           "Premium export-quality turmeric fingers carefully selected for their rich natural colour, excellent aroma, and high purity. Ideal for food processing.",
@@ -41,7 +48,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         subCategory: "Spices",
       },
       {
-        id: "spices-turmeric",
+        id: "spices-turmeric_powder",
         name: "Turmeric Powder",
         description:
           "Premium export-quality turmeric powder with vibrant natural colour, rich aroma, and high curcumin content. Suitable for seasoning and spice blends.",
@@ -50,7 +57,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         subCategory: "Spices",
       },
       {
-        id: "spices-cardamom",
+        id: "spices-red_chilli",
         name: "Whole Red Chilli",
         description:
           "Premium whole dried red chillies offering vibrant colour, balanced pungency, and superior quality for global food industries.",
@@ -59,7 +66,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         subCategory: "Spices",
       },
       {
-        id: "dehydrated-onion",
+        id: "spices-red_chilli_powder",
         name: "Red Chilli Powder",
         description:
           "Premium red chilli powder processed from selected chillies to deliver excellent colour, aroma, and pungency for international food applications.",
@@ -68,7 +75,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         subCategory: "Spices",
       },
       {
-        id: "dehydrated-garlic",
+        id: "spices-Cumin_seeds",
         name: "Cumin Seeds",
         description:
           "High-purity cumin seeds with a strong aroma and authentic flavour, widely used in spice blends, seasoning, and food manufacturing.",
@@ -77,7 +84,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         subCategory: "Spices",
       },
       {
-        id: "dehydrated-ginger",
+        id: "spices-black_pepper",
         name: "Black Pepper",
         description:
           "Premium black pepper sourced from India's leading spice growing regions, offering exceptional aroma, flavour, and export-grade quality.",
@@ -86,7 +93,34 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         subCategory: "Spices",
       },
       {
-        id: "cereals-ric",
+        id: "spices-cardamom",
+        name: "Green Cardamom",
+        description:
+          "Premium-quality cardamom sourced and selected for its distinctive aroma, natural green color, and rich flavor. Suitable for culinary applications, spice blends, beverages, food processing, and international bulk trade.",
+        image: grncardamom,
+        hsCode: "09083120",
+        subCategory: "Spices",
+      },
+      {
+        id: "spices-clove",
+        name: "Clove",
+        description:
+          "Premium-quality whole cloves selected for their rich aroma, warm flavor, and natural essential oil content. Suitable for spice blends, food processing, seasoning, beverages, and international bulk trade.",
+        image: clove,
+        hsCode: "09071090",
+        subCategory: "Spices",
+      },
+      {
+        id: "spices-star_anise",
+        name: "Star Anise",
+        description:
+          "Premium-quality whole star anise selected for its distinctive star-shaped appearance, sweet licorice-like flavor, and rich aromatic properties. Suitable for spice blends, seasoning, food processing, beverage manufacturing, and international bulk trade.",
+        image: stara,
+        hsCode: "09096100",
+        subCategory: "Spices",
+      },
+      {
+        id: "dehydrated-moringa_powder",
         name: "Moringa Powder",
         description:
           "Premium nutrient-rich moringa powder processed from carefully selected leaves. Widely used in nutraceutical and health food industries.",
@@ -95,7 +129,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         subCategory: "Dehydrated Powder",
       },
       {
-        id: "cereals-wheat",
+        id: "dehydrated-onion_powder",
         name: "Onion Powder",
         description:
           "Finely processed dehydrated onion powder offering strong flavour, excellent consistency, and extended shelf life for food manufacturers.",
@@ -104,12 +138,21 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         subCategory: "Dehydrated Powder",
       },
       {
-        id: "cereals-maize",
+        id: "dehydrated-garlic_powder",
         name: "Garlic Powder",
         description:
-          "Premium dehydrated garlic powder known for its rich aroma, pungent flavour, and extensive applications across the food industry",
+          "Premium dehydrated garlic powder known for its rich aroma, pungent flavour, and extensive applications across the food industry.",
         image: garlicPowder,
         hsCode: "07129040",
+        subCategory: "Dehydrated Powder",
+      },
+      {
+        id: "dehydrated-ginger_powder",
+        name: "Ginger Powder",
+        description:
+          "Premium-quality ginger powder produced from carefully selected, dried ginger roots and finely ground to preserve its characteristic aroma, warm flavor, and natural pungency. Suitable for food processing, spice blends, seasoning, bakery products, beverage manufacturing, and international bulk trade.",
+        image: gingerpow,
+        hsCode: "09101290",
         subCategory: "Dehydrated Powder",
       },
       {
@@ -120,6 +163,42 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         image: rice,
         hsCode: "10063090",
         subCategory: "Cereals",
+      },
+      {
+        id: "cereals-paraboiled_rice",
+        name: "IR64 Paraboiled Rice",
+        description:
+          "Premium-quality parboiled rice processed for consistent grain quality, excellent cooking performance, and reliable bulk supply for international markets.",
+        image: ir64pararice,
+        hsCode: "10063010",
+        subCategory: "Cereals",
+      },
+      {
+        id: "cereals-broken_rice",
+        name: "100% Broken Rice(Sortex & Non- sortex)",
+        description:
+          "Quality broken rice processed from selected rice grains, offering consistent grain size and reliable quality for food processing, commercial use, and bulk international trade.",
+        image: brokenrice,
+        hsCode: "10064000",
+        subCategory: "Cereals",
+      },
+      {
+        id: "cereals-sona_masoori_rice",
+        name: "Sona Masroori Rice",
+        description:
+          "Premium-quality Sona Masoori rice known for its medium-grain texture, aromatic character, and excellent cooking properties. Suitable for household consumption, food service, and international bulk trade.",
+        image: brokenrice,
+        hsCode: "10063010",
+        subCategory: "Cereals",
+      },
+      {
+        id: "nuts-rcn",
+        name: "Raw Cashew Nuts",
+        description:
+          "Premium-quality Raw Cashew Nuts (RCN) sourced from selected cashew-growing regions, suitable for commercial processing and kernel production. These unprocessed cashew nuts are valued for their kernel recovery potential and are supplied to cashew processors, importers, wholesalers, and food processing industries. Available for bulk trading and international export, subject to agreed quality specifications.",
+        image: rcn,
+        hsCode: "08013100",
+        subCategory: "Dry Fruits & Nuts",
       },
     ],
   },
