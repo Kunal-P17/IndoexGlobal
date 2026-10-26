@@ -4,9 +4,6 @@ import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig(() => ({
-  base: process.env.CUSTOM_DOMAIN_BUILD === 'true'
-    ? '/'
-    : '/IndoexGlobal/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

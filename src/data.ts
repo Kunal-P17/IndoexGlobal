@@ -292,7 +292,7 @@ export const INDUSTRIES: IndustryItem[] = [
     description:
       "Powering regional food security through secure bulk shipments of grains, oils, and spices under strict sanitary measures.",
     bgImage:
-      "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=600",
+      "./Imgs/rice_industry.jpeg",
   },
   {
     id: "ind-construction",
