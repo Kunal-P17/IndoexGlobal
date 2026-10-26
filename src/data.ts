@@ -29,7 +29,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     icon: "Wheat",
     description:
       "Premium spices, hygienically processed dehydrated powders, and high-quality food grains sourced from reliable Indian producers.",
-    subCategories: ["Spices", "Dehydrated Powder", "Cereals"],
+    subCategories: ["Spices", "Dehydrated Powder", "Cereals","Dry Fruits & Nuts"],
     items: [
       {
         id: "spices-pepper",
